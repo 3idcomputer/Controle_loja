@@ -11,19 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ProdutoController@home');
 
 Route::get('/produtos','ProdutoController@lista');
 
-Route::get ('/cadastroprodutos', function (){
-
-    echo 'Cadastro de Produtos';
-
-});
-Route::get ('/cadastrouser', function (){
-
-    echo 'Cadastro de Usuários';
-
-});

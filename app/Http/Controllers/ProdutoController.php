@@ -10,4 +10,14 @@ class ProdutoController extends Controller
     {
         return '<h1>Lista de Produtos</h1>';
     }
+
+
+    public function home()
+    {
+        return view('home');
+    }
 }
+
+
+
+
