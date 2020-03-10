@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/estilo.css" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sistema Controle de Estoque</title>
 </head>
 <body>
 
