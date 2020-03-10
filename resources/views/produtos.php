@@ -15,8 +15,40 @@
 </div>
 
 <h2 class="container">Produtos em Estoque</h2>
+<div class="container">
+    <table class="table table-striped table-bordered mt-4">
 
 
+
+        <tr class="font-weight-bold font-italic">
+            <td>Produto(s)</td>
+            <td>Preço R$ </td>
+            <td>Descrição</td>
+            <td>QTD/Estoque</td>
+            <td>Detalhes</td>
+
+        </tr>
+
+
+            <?php foreach ($produtos as $p): ?>
+
+
+                <tr>
+                    <td><?= $p->nome ?> </td>
+                    <td><?= $p->valor ?> </td>
+                    <td><?= $p->descricao ?> </td>
+                    <td><?= $p->quantidade ?> </td>
+                    <td>
+                        <a href="/produtos/mostra">
+                            Visualizar
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach ?>
+</table>
+
+    <a href="/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Voltar</a> </button>
+</div>
 
 </body>
 </html>

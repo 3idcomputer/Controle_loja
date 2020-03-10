@@ -14,10 +14,14 @@
 <body>
 
 <div class="jumbotron">
-<h1 class="container">Seja Bem Vindo</h1><br>
+<h1 class="container text-center ">Seja Bem Vindo</h1><br>
+
+    <h3 class="container">Sistema Loja Mobile</h3><br>
 </div>
 
 
-<h2 class="container">Sistema Controle de Estoque</h2>
+<h2 class="container"> - <a href="/produtos">Visualizar Estoque</a> </h2>
+<h2 class="container"> - <a href="/produtos">Cadastrar Produto</a> </h2>
+<h2 class="container"> - <a href="/produtos">Orçamento</a> </h2>
 </body>
 </html>

@@ -2,13 +2,21 @@
 
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 
 class ProdutoController extends Controller
 {
     public function lista()
     {
-        return view( 'produtos');
+        $produtos = DB::select ('select * from produtos');
+
+        return view( 'produtos')->withProdutos($produtos);
+    }
+
+    public function mostra()
+    {
+        return view('detalhe');
     }
 
 
